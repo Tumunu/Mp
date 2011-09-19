@@ -16,12 +16,12 @@
 
 
 // example caption strings for app
-#define qtn_app_caption_string "M-Powered sms"
+#define qtn_app_caption_string "Tumunued sms"
 
-#define qtn_app_short_caption_string "M-Power"
+#define qtn_app_short_caption_string "Tumunu"
 
-#define SMS_BODY_TEXT "Mate you've got to check this out\rM-Power - You to your World!\rYou'll find it here http://www.liveinteractive.com.au"
+#define SMS_BODY_TEXT "Mate you've got to check this out\rTumunu - You to your World!\rYou'll find it here http://www.liveinteractive.com.au"
 #define CATCH_CRY "You to your World!"
-#define OPTION_SEND_SMS "M-Power SMS"
+#define OPTION_SEND_SMS "Tumunu SMS"
 #define OPTION_PLAY "Activate | Play"
 #define OPTION_DOWNLOAD "Download SPEC"

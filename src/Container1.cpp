@@ -33,7 +33,7 @@ void CContainer1::ConstructL(const TRect& aRect)
 
 	iTopLabel = new (ELeave) CEikLabel;
 	iTopLabel->SetContainerWindowL( *this );
-	iTopLabel->SetTextL( _L("M-Power") );
+	iTopLabel->SetTextL( _L("Tumunu") );
 
 	iBottomLabel = new (ELeave) CEikLabel;
 	iBottomLabel->SetContainerWindowL( *this );

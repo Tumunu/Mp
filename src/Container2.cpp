@@ -94,7 +94,7 @@ void CContainer2::InitListItemsL()
 	CleanupStack::PushL(iListItems);
 
 	// NOTE: _L() is depreciated
-	iListItems->AppendL (_L("M-Power SMS"));
+	iListItems->AppendL (_L("Tumunu SMS"));
 	iListItems->AppendL (_L("Activate | Play"));
 	iListItems->AppendL (_L("Download SPEC"));
 

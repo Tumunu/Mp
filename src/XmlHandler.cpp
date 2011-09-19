@@ -105,7 +105,7 @@ void CXmlHandler::CleanupQueryText()
 	iQueryResponse = NULL;
 }
 
-_LIT8(KUserAgent, "M-Power. You to your World");
+_LIT8(KUserAgent, "Tumunu. You to your World");
 _LIT8(KAccept, "*/*");
 _LIT8(KPlainText, "text/xml");
 _LIT8(KMpowerUrl, "http://mpower.url");
