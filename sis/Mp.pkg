@@ -1,0 +1,24 @@
+; Mp.pkg
+
+; Languages
+&EN
+
+; Header
+#{"Mp"},(0x0165a237), 0, 1, 1
+
+; Platform compatibility
+(0x10200BAB), 0, 0, 0, {"Series60ProductID"}
+
+; Target
+"C:\Symbian\8.1a\S60_2nd_FP3\Epoc32\release\armi\UREL\Mp.app"-"!:\system\apps\Mp\Mp.app"
+"C:\Symbian\8.1a\S60_2nd_FP3\Epoc32\data\z\system\apps\Mp\Mp.aif"-"!:\system\apps\Mp\Mp.aif"
+"C:\Symbian\8.1a\S60_2nd_FP3\Epoc32\data\z\system\apps\Mp\Mp.rSC"-"!:\system\apps\Mp\Mp.rSC"
+"C:\Symbian\8.1a\S60_2nd_FP3\Epoc32\data\z\system\apps\Mp\Mp_caption.rSC"-"!:\system\apps\Mp\Mp_caption.rSC"
+"C:\Symbian\8.1a\S60_2nd_FP3\Epoc32\data\z\system\apps\Mp\Mpower.mbm"-"!:\system\apps\Mp\Mpower.mbm"
+"C:\Symbian\8.1a\S60_2nd_FP3\Epoc32\winscw\c\system\Apps\Mp\invite.png"-"!:\system\apps\Mp\invite.png"
+"C:\Symbian\8.1a\S60_2nd_FP3\Epoc32\winscw\c\system\Apps\Mp\send.png"-"!:\system\apps\Mp\send.png"
+"C:\Symbian\8.1a\S60_2nd_FP3\Epoc32\winscw\c\system\Apps\Mp\headers.png"-"!:\system\apps\Mp\headers.png"
+"C:\Symbian\8.1a\S60_2nd_FP3\Epoc32\winscw\c\system\Apps\Mp\bkgnds.png"-"!:\system\apps\Mp\bkgnds.png"
+"C:\Symbian\8.1a\S60_2nd_FP3\Epoc32\winscw\c\system\Apps\Mp\softkeys.png"-"!:\system\apps\Mp\softkeys.png"
+
+

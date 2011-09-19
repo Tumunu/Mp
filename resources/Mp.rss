@@ -1,0 +1,205 @@
+/*
+============================================================================
+ Name        : Mp.rss
+ Author      : Cleave Pokotea
+ Version     :
+ Copyright   : 2006 - 2007
+ Description : This file contains all the resources for the Mp.
+============================================================================
+*/
+
+//  RESOURCE IDENTIFIER
+NAME    AWIZ // 4 letter ID
+
+//  INCLUDES
+
+#include <eikon.rh>
+#include "Mp.hrh"
+#include "Mp.loc"
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+
+//  RESOURCE DEFINITIONS 
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf = "Mp"; }
+
+RESOURCE EIK_APP_INFO
+    {
+    //status_pane = r_mp_status_pane;
+    }
+    
+RESOURCE AVKON_VIEW r_splash_view
+    {
+    cba = R_AVKON_SOFTKEYS_EMPTY;
+    }
+
+//----------------------------------------------------
+//   
+//    r_mp_hotkeys
+//
+//----------------------------------------------------
+//
+RESOURCE HOTKEYS r_mp_hotkeys
+    {
+    control =
+        {
+        HOTKEY { command = EAknCmdExit; key = 'e'; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_mp_view1
+//
+//----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_mp_view1
+    {
+    hotkeys = r_mp_hotkeys;
+    cba = r_softkeys_interact_update;    
+    }
+
+//----------------------------------------------------
+//   
+//    r_mp_view2
+//
+//----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_mp_view2
+    {
+    hotkeys = r_mp_hotkeys;
+    menubar = r_mp_menubar_view2;  
+    cba     = R_AVKON_SOFTKEYS_SELECTION_LIST; 
+    }
+
+RESOURCE MENU_BAR r_mp_menubar_view2
+    {
+    titles =
+        {
+        MENU_TITLE { menu_pane = r_mp_app_menu; txt = "App"; },
+        MENU_TITLE { menu_pane = r_mp_view2_menu; txt = "View"; }
+        };
+    }
+    
+RESOURCE MENU_PANE r_mp_view2_menu
+    {
+    items =
+        {
+        MENU_ITEM { command = ECmdSendSMS; txt = OPTION_SEND_SMS; },
+        MENU_ITEM { command = ECmdPlay; txt = OPTION_PLAY; },
+        MENU_ITEM { command = ECmdDownload; txt = OPTION_DOWNLOAD; }
+        };
+    }    
+
+//----------------------------------------------------
+//   
+//    r_mp_view4
+//
+//----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_mp_view4
+    {
+    hotkeys = r_mp_hotkeys;
+    menubar = r_mp_menubar_view4;  
+    cba     = R_AVKON_SOFTKEYS_SELECTION_LIST; 
+    }
+
+//----------------------------------------------------
+//   
+//    r_mp_menubar_view4
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_BAR r_mp_menubar_view4
+    {
+    titles =
+        {
+        MENU_TITLE { menu_pane = r_mp_app_menu; txt = "App"; },
+        MENU_TITLE { menu_pane = r_mp_view4_menu; txt = "View"; }
+        };
+    }
+
+//----------------------------------------------------
+//   
+//    r_mp_view4_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_mp_view4_menu
+    {
+    items =
+        {
+        MENU_ITEM { command = ECmdBaseId; txt = qtn_view2_option_item; }
+        };
+    }
+    
+
+//----------------------------------------------------
+//   
+//    r_mp_app_menu
+//
+//----------------------------------------------------
+//
+RESOURCE MENU_PANE r_mp_app_menu
+    {
+    items =
+        {
+        MENU_ITEM { command = EAknCmdExit; txt = qtn_appl_exit; }
+        };
+    }
+
+
+///////////////////////////////////////////////////////////////////
+
+RESOURCE CBA r_softkeys_interact_update
+	{
+	buttons =
+		{
+		CBA_BUTTON 
+			{
+			id = EAknSoftkeyOk; 
+			txt = "Interact";
+			},
+		CBA_BUTTON 
+			{
+			id = EAknSoftkeyBack; 
+			txt = "Update";
+			}
+		};
+	}
+
+RESOURCE CBA r_softkeys_select_exit
+	{
+	buttons =
+		{
+		CBA_BUTTON 
+			{
+			id = EAknSoftkeyOk; 
+			txt = "Select";
+			},
+		CBA_BUTTON 
+			{
+			id = EAknSoftkeyBack; 
+			txt = "Exit";
+			}
+		};
+	}
+	
+// ---------------------------------------------------------
+//   
+//    Strings used by the application
+//
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_sms_body_text
+	{ 
+	buf = SMS_BODY_TEXT; 
+	}
+	
+RESOURCE TBUF r_banner_text
+	{ 
+	buf = CATCH_CRY; 
+	}	

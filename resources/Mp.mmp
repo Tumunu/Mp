@@ -1,0 +1,83 @@
+/*
+============================================================================
+ Name        : Mp.mmp
+ Author      : Cleave Pokotea
+ Version     :
+ Copyright   : 2006 - 2007
+ Description : This is the project specification file for Mp.
+============================================================================
+*/
+TARGET                                  Mp.app 
+TARGETTYPE                              app 
+UID                                     0x100039CE 0x0165a237 
+TARGETPATH                              \system\apps\Mp 
+SOURCEPATH                              ..\resources 
+RESOURCE                                Mp.rss 
+RESOURCE                                Mp_caption.rss 
+
+SOURCEPATH                              ..\src 
+SOURCE                                  View3.cpp 
+SOURCE                                  Container3.cpp 
+SOURCE                                  bitmapmethods.cpp 
+SOURCE                                  SpriteHandler.cpp 
+SOURCE                                  PngLoader.cpp 
+SOURCE                                  Spec.cpp 
+SOURCE                                  View4.cpp 
+SOURCE                                  Container4.cpp 
+SOURCE                                  View2.cpp 
+SOURCE                                  Container2.cpp 
+SOURCE                                  CustomListBox.cpp 
+SOURCE                                  MpApp.cpp 
+SOURCE                                  MpAppui.cpp 
+SOURCE                                  MpDocument.cpp 
+SOURCE                                  Container1.cpp 
+SOURCE                                  View1.cpp 
+SOURCE					SplashView.cpp
+SOURCE					SplashContainer.cpp
+
+LANG                                    SC 
+USERINCLUDE                             . 
+USERINCLUDE                             ..\inc 
+SYSTEMINCLUDE                           . 
+SYSTEMINCLUDE                           \epoc32\include 
+/* [+] */ LIBRARY                       send.lib 
+LIBRARY                                 commonengine.lib 
+LIBRARY                                 eikdlg.lib 
+LIBRARY                                 estor.lib 
+LIBRARY                                 aknnotify.lib 
+LIBRARY                                 etext.lib 
+LIBRARY                                 insock.lib 
+LIBRARY                                 avkon.lib 
+LIBRARY                                 euser.lib 
+LIBRARY                                 apparc.lib 
+LIBRARY                                 cone.lib 
+LIBRARY                                 eikcore.lib 
+LIBRARY                                 eikcoctl.lib 
+LIBRARY                                 eikctl.lib 
+LIBRARY                                 esock.lib 
+LIBRARY                                 bluetooth.lib 
+LIBRARY                                 sdpagent.lib 
+LIBRARY                                 sdpdatabase.lib 
+LIBRARY                                 btextnotifiers.lib 
+LIBRARY                                 btmanclient.lib 
+LIBRARY                                 bafl.lib 
+LIBRARY                                 efsrv.lib 
+LIBRARY                                 bitgdi.lib 
+LIBRARY                                 gdi.lib 
+LIBRARY                                 mediaclientimage.lib 
+LIBRARY                                 fbscli.lib 
+LIBRARY                                 etel.lib 
+LIBRARY                                 egul.lib 
+LIBRARY                                 msgs.lib 
+LIBRARY                                 ws32.lib 
+LIBRARY				                    Sendui.lib 
+LIBRARY									apgrfx.lib
+
+START BITMAP Mpower.mbm 
+  TARGETPATH                              \system\apps\Mp 
+  HEADER                                   
+  SOURCEPATH                              ..\bitmaps 
+  SOURCE                                  C24 splash.bmp 
+END  
+
+AIF                                     Mp.aif ..\aif Mpaif.rss c8 context_pane_icon.bmp context_pane_icon_mask.bmp list_icon.bmp list_icon_mask.bmp 

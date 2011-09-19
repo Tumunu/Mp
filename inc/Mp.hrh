@@ -1,0 +1,36 @@
+/*
+============================================================================
+ Name        : Mp resource header file Mp.hrh
+ Author      : Cleave Pokotea
+ Version     :
+ Copyright   : 2006 - 2007
+ Description : This file contains declarations for constants of Mp.
+               The file can be included in C++ or resource file.
+============================================================================
+*/
+
+#ifndef MP_HRH
+#define MP_HRH
+
+enum TMpCommandIds
+    {
+    ECmdCreateSMS = 0x6000,
+	ECmdBaseId,
+	ECmdSendSMS,
+	ECmdPlay,
+	ECmdDownload,
+	ECmdOthers,
+	ECmdArchive
+    };
+ 
+enum TMpViewId
+	{
+	EMpViewIndex = 1,
+	EMpViewMain,
+	EMpViewSms,
+	EMpViewSpecs,
+	EMpViewDownload,
+	EMpViewSplash
+	};
+
+#endif      // MP_HRH
